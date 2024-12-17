@@ -107,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
               onPressed: () {
                 Navigator.pushNamed(context, RouteName.registerScreen);
               },
-              child: const Text('Create Account'),
+              child: const Text('Register'),
             ),
           ],
         ),

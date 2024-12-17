@@ -1,11 +1,13 @@
 class User {
   int? id;
   String username;
+  String fullName;
   String password;
 
   User({
     this.id,
     required this.username,
+    required this.fullName,
     required this.password,
   });
 
@@ -13,6 +15,7 @@ class User {
     return {
       'id': id,
       'username': username,
+      'full_name': fullName,
       'password': password,
     };
   }
@@ -21,6 +24,7 @@ class User {
     return User(
       id: map['id'],
       username: map['username'],
+      fullName: map['full_name'],
       password: map['password'],
     );
   }
